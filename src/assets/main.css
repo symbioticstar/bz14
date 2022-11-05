@@ -1,0 +1,69 @@
+.mono {
+    font-family: Consolas, Monaco, monospace;
+}
+
+.monospace {
+    font-family: Consolas, Menlo, Monaco, monospace;
+}
+
+a {
+    color: #1976d2;
+}
+
+.monospace-2 {
+    font-family: 'Ubuntu Mono', 'Courier New', Monaco, monospace;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.baloo-2 {
+    font-family: "Baloo 2", "Roboto", sans-serif;
+}
+
+.h1-breadcrumbs li {
+    font-size: 1.8rem !important;
+}
+
+.h2-breadcrumbs li {
+    font-size: 1.5rem !important;
+}
+
+
+.active-search-item-blue {
+    background: #c4ecf8;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ibm {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.ibm5 {
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 500;
+}
+
+
+.h-dense .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.h-dense .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.inline-code {
+    padding: 0 4px 0 4px;
+    background: #dddddd;
+    font-family: monospace;
+    border-radius: 2px;
+    margin-left: 3px;
+    margin-right: 3px;
+}

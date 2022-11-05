@@ -1,0 +1,83 @@
+/* baloo-2-regular - latin */
+@font-face {
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('./fonts/baloo-2-v2-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('./fonts/baloo-2-v2-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* baloo-2-500 - latin */
+@font-face {
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('./fonts/baloo-2-v2-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('./fonts/baloo-2-v2-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* baloo-2-600 - latin */
+@font-face {
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+    url('./fonts/baloo-2-v2-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('./fonts/baloo-2-v2-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* montserrat-500 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('./fonts/montserrat-v18-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('./fonts/montserrat-v18-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-500italic - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    src: local(''),
+    url('./fonts/montserrat-v18-latin-500italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('./fonts/montserrat-v18-latin-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/*!* baloo-2-700 - latin *!*/
+/*@font-face {*/
+/*  font-family: 'Baloo 2';*/
+/*  font-style: normal;*/
+/*  font-weight: 700;*/
+/*  src: local(''),*/
+/*  url('./fonts/baloo-2-v2-latin-700.woff2') format('woff2'), !* Chrome 26+, Opera 23+, Firefox 39+ *! url('./fonts/baloo-2-v2-latin-700.woff') format('woff'); !* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ *!*/
+/*}*/
+
+
+/* ibm-plex-serif-regular - latin */
+@font-face {
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('./fonts/ibm-plex-serif-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('./fonts/ibm-plex-serif-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ibm-plex-serif-500 - latin */
+@font-face {
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('./fonts/ibm-plex-serif-v14-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('./fonts/ibm-plex-serif-v14-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ibm-plex-serif-600 - latin */
+@font-face {
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+    url('./fonts/ibm-plex-serif-v14-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('./fonts/ibm-plex-serif-v14-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
