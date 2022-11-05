@@ -24,13 +24,12 @@ export function useMenu() {
   const menuOptions: MenuOption[] = [
     createOption('/', 'BZ14', <Home />, null, {
       extra: () => (
-        <span style='color: grey; font-size: 12px; margin-left: 6px' class='monospace'>
+        <span style="color: grey; font-size: 12px; margin-left: 6px" class="monospace">
           0.21.0
         </span>
       ),
     }),
   ]
-
 
   const availableMenuOptions = computed(() => menuOptions)
 

@@ -1,4 +1,4 @@
-<script lang='tsx' setup>
+<script lang="tsx" setup>
 import { NButton, NPopover } from 'naive-ui'
 import { RouteRecordRaw, RouterLink, useRoute, useRouter } from 'vue-router'
 import { ChevronDownIcon as ChevronDown, DotsIcon as Dots, Menu2Icon as Menu2 } from 'vue-tabler-icons'
@@ -6,7 +6,6 @@ import { computed, ref } from 'vue'
 import { useResponsive } from '@/assets/utils/responsive'
 import { useMenu } from '@/data/menu'
 import { useElRef } from '@/assets/utils/el-ref'
-
 
 const dropdownOptions = [
   {
@@ -18,7 +17,7 @@ const dropdownOptions = [
     key: 'permission',
   },
   {
-    label: () => <RouterLink to='/token'>访问令牌</RouterLink>,
+    label: () => <RouterLink to="/token">访问令牌</RouterLink>,
     key: 'token',
   },
   {
@@ -33,16 +32,15 @@ const dropdownOptions = [
 
 const showModal = ref()
 
-
 function fromRoute(e: RouteRecordRaw) {
   return e.meta?.title
     ? {
-      path: e.path,
-      title: typeof e.meta.title === 'function' ? e.meta.title(route) : e.meta.title,
-      label: typeof e.meta.title === 'function' ? e.meta.title(route) : e.meta.title,
-      link: e.meta.link,
-      key: e.path,
-    }
+        path: e.path,
+        title: typeof e.meta.title === 'function' ? e.meta.title(route) : e.meta.title,
+        label: typeof e.meta.title === 'function' ? e.meta.title(route) : e.meta.title,
+        link: e.meta.link,
+        key: e.path,
+      }
     : null
 }
 
@@ -111,14 +109,14 @@ function onMenuUpdate() {
 </script>
 
 <template>
-  <n-layout-header :bordered='true' :position="isMobile ? 'static' : 'absolute'" class='main-header'>
-    <n-breadcrumb style='max-width: 70vw; overflow: hidden; text-overflow: ellipsis'>
-      <n-breadcrumb-item v-for='e of routeTitles' :key='e.path'>
-        <router-link v-if='e.link' :to='e.path' style='color: #1976d2'>{{ e.title }}</router-link>
+  <n-layout-header :bordered="true" :position="isMobile ? 'static' : 'absolute'" class="main-header">
+    <n-breadcrumb style="max-width: 70vw; overflow: hidden; text-overflow: ellipsis">
+      <n-breadcrumb-item v-for="e of routeTitles" :key="e.path">
+        <router-link v-if="e.link" :to="e.path" style="color: #1976d2">{{ e.title }}</router-link>
         <span v-else>{{ e.title }}</span>
       </n-breadcrumb-item>
-      <n-breadcrumb-item v-if='routeChildren && routeChildren.length'>
-        <n-dropdown :options='routeChildren' trigger='click' @select='handleSelect'>
+      <n-breadcrumb-item v-if="routeChildren && routeChildren.length">
+        <n-dropdown :options="routeChildren" trigger="click" @select="handleSelect">
           <n-button text>
             <span>{{ routeChildren[0].label }}</span>
             <n-icon>
@@ -128,11 +126,11 @@ function onMenuUpdate() {
         </n-dropdown>
       </n-breadcrumb-item>
     </n-breadcrumb>
-    <n-menu style='flex-grow: 1'></n-menu>
-    <n-space align='center' size='large'>
-      <template v-if='!isMobile'>
+    <n-menu style="flex-grow: 1"></n-menu>
+    <n-space align="center" size="large">
+      <template v-if="!isMobile">
         <n-text>用户名</n-text>
-        <n-dropdown :options='dropdownOptions' placement='bottom-end' trigger='hover'>
+        <n-dropdown :options="dropdownOptions" placement="bottom-end" trigger="hover">
           <n-button circle>
             <template #icon>
               <n-icon>
@@ -143,22 +141,22 @@ function onMenuUpdate() {
         </n-dropdown>
       </template>
       <template v-else>
-        <div style='display: flex; align-items: center'>
+        <div style="display: flex; align-items: center">
           <n-popover
-            v-if='isMobile'
-            ref='popoverRef'
-            display-directive='show'
-            placement='bottom-end'
-            style='padding: 0; width: 288px'
-            trigger='click'
+            v-if="isMobile"
+            ref="popoverRef"
+            display-directive="show"
+            placement="bottom-end"
+            style="padding: 0; width: 288px"
+            trigger="click"
           >
             <template #trigger>
-              <n-icon size='20'>
+              <n-icon size="20">
                 <menu2></menu2>
               </n-icon>
             </template>
-            <div style='overflow: auto; max-height: 79vh'>
-              <n-menu :options='availableMenuOptions' @update:value='onMenuUpdate'></n-menu>
+            <div style="overflow: auto; max-height: 79vh">
+              <n-menu :options="availableMenuOptions" @update:value="onMenuUpdate"></n-menu>
             </div>
           </n-popover>
         </div>
